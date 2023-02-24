@@ -274,11 +274,20 @@ android {
     }
 }
 
+plugins {
+  id "com.android.application"
+  id "com.google.gms.google-services"
+}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
     def isWebpEnabled = (findProperty('expo.webp.enabled') ?: "") == "true";
@@ -360,3 +369,5 @@ def isNewArchitectureEnabled() {
     // - Set an environment variable `ORG_GRADLE_PROJECT_newArchEnabled=true`
     return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
 }
+
+apply plugin: "com.google.gms.google-services"
