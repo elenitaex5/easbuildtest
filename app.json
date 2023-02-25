@@ -27,8 +27,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.elenitaex5.easbuildtest",
-      "googleServicesFile": "./google-services.json"
+      "package": "com.elenitaex5.easbuildtest"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
