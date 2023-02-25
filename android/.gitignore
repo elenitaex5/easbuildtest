@@ -19,3 +19,5 @@ buck-out/
 
 # Bundle artifacts
 *.jsbundle
+
+app/google-services.json
