@@ -68,7 +68,15 @@ async function registerForPushNotificationsAsync() {
       alert('Failed to get push token for push notification!');
       return;
     }
-    token = (await Notifications.getExpoPushTokenAsync()).data;
+    //It must work in prod
+    //token = (await Notifications.getExpoPushTokenAsync()).data;
+
+    /* FIX FOR DEV */
+    const appConfig = require('./app.json');
+    const projectId = appConfig?.expo?.extra?.eas?.projectId;
+    const token = (await Notifications.getExpoPushTokenAsync({
+	    projectId
+    })).data;
     console.log(token);
   } else {
     alert('Must use physical device for Push Notifications');
