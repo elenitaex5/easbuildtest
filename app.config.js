@@ -1,6 +1,10 @@
 export default {
   android: {
+    package: 'com.elenitaex5.easbuildtest',
     googleServicesFile: process.env.GOOGLE_SERVICES_JSON,
+  },
+  ios: {
+    bundleIdentifier: 'com.elenitaex5.easbuildtest'
   },
   extra: {
     eas: {
