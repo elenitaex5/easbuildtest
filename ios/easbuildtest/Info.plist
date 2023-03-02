@@ -25,7 +25,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>myapp</string>
+          <string>easbuildtest</string>
           <string>com.elenitaex5.easbuildtest</string>
         </array>
       </dict>

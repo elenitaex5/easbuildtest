@@ -1,4 +1,5 @@
 export default {
+  scheme: 'easbuildtest',
   android: {
     googleServicesFile: process.env.GOOGLE_SERVICES_JSON,
   },
