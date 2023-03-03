@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Box, NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider } from 'native-base';
 
 import useCachedResources from './src/hooks/useCachedResources';
 import useColorScheme from './src/hooks/useColorScheme';
@@ -10,10 +10,6 @@ export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
-  //reordering navigation
-  //having notifications in app.tsx
-
-
   if (!isLoadingComplete) {
     return null;
   } else {
@@ -22,8 +18,8 @@ export default function App() {
         <PushNotificationWrapper />
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
-        <Box>Hello world</Box>
-        </NativeBaseProvider>
+
+     </NativeBaseProvider>
 
 
     );
