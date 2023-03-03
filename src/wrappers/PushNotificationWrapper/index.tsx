@@ -1,7 +1,7 @@
 
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Platform } from 'react-native';
 
 Notifications.setNotificationHandler({
@@ -25,13 +25,13 @@ async function registerForPushNotificationsAsync() {
       alert('Failed to get push token for push notification!');
       return;
     }
-    //It must works in prod
+    //TODO It must works in prod
     //token = (await Notifications.getExpoPushTokenAsync()).data;
 
     /* FIX FOR DEV */
     const appConfig = require('../../../app.json');
     const projectId = appConfig?.expo?.extra?.eas?.projectId;
-    const token = (await Notifications.getExpoPushTokenAsync({
+    token = (await Notifications.getExpoPushTokenAsync({
 	    projectId
     })).data;
 
@@ -51,16 +51,8 @@ async function registerForPushNotificationsAsync() {
 }
 
 export const PushNotificationWrapper = () => {
-  const notificationListener = useRef();
-  const responseListener = useRef();
-
   useEffect(() => {
     registerForPushNotificationsAsync()
-
-    return () => {
-      Notifications.removeNotificationSubscription(notificationListener.current);
-      Notifications.removeNotificationSubscription(responseListener.current);
-    };
   }, []);
 
   return <></>
