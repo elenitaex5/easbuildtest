@@ -1,24 +1,27 @@
 import { StatusBar } from 'expo-status-bar'
 import { NativeBaseProvider } from 'native-base'
+import React from 'react'
 
 import useCachedResources from './src/hooks/useCachedResources'
 import useColorScheme from './src/hooks/useColorScheme'
+import usePushNotifications from './src/hooks/usePushNotifications'
 import Navigation from './src/navigation'
-import PushNotificationWrapper from './src/wrappers/PushNotificationWrapper'
 
-export default function App() {
+export const App = () => {
   const isLoadingComplete = useCachedResources()
   const colorScheme = useColorScheme()
+  usePushNotifications()
 
   if (!isLoadingComplete) {
     return null
   } else {
     return (
       <NativeBaseProvider>
-        <PushNotificationWrapper />
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
       </NativeBaseProvider>
     )
   }
 }
+
+export default App
