@@ -1,22 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar'
+import { NativeBaseProvider } from 'native-base'
+import React from 'react'
 
-import useCachedResources from './src/hooks/useCachedResources';
-import useColorScheme from './src/hooks/useColorScheme';
-import Navigation from './src/navigation';
+import useCachedResources from './src/hooks/useCachedResources'
+import useColorScheme from './src/hooks/useColorScheme'
+import usePushNotifications from './src/hooks/usePushNotifications'
+import Navigation from './src/navigation'
 
-export default function App() {
-  const isLoadingComplete = useCachedResources();
-  const colorScheme = useColorScheme();
+export const App = () => {
+  const isLoadingComplete = useCachedResources()
+  const colorScheme = useColorScheme()
+  usePushNotifications()
 
   if (!isLoadingComplete) {
-    return null;
+    return null
   } else {
     return (
-      <SafeAreaProvider>
+      <NativeBaseProvider>
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
-      </SafeAreaProvider>
-    );
+      </NativeBaseProvider>
+    )
   }
 }
+
+export default App
