@@ -8,7 +8,23 @@ https://docs.expo.dev/push-notifications/push-notifications-setup/
 If the project is configured EAS project secret GOOGLE_SERVICES_JSON has to be included uploading google-services.json downloaded from Firebase project.
 
 After installing apk or ipa in devices and start expo server dev client... an Expo Push Token is given like that: `ExponentPushToken[XXXXXXXXXXXXXX]`. It could be used for send push notifications to dev.
-para iOS `ExponentPushToken[4ajkjJKY26ELR8pNkwa9jj]`
-Android `ExponentPushToken[T1h2ypFUxXEVqBEeZzKfxv]`
+
+- iOS `ExponentPushToken[4ajkjJKY26ELR8pNkwa9jj]`
+- Android `ExponentPushToken[T1h2ypFUxXEVqBEeZzKfxv]`
 
 Deep links has an schema like : `easbuildtest://`
+
+## Troubleshoot
+
+### Testing in web:
+
+Expo Webpack is actually in beta and most times testing in web mode (`expo start --dev-client` and `w`) is crashing with pollyfill error.
+
+To solve this error:
+
+- Uninstall web modules
+  `npm uninstall react-dom react-native-web @expo/webpack-config`
+- Install them again through Expo
+- `npx expo install react-dom react-native-web @expo/webpack-config`
+- Start only web mode:
+  `npx expo start --web`
