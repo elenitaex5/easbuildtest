@@ -25,15 +25,15 @@ const config = {
   }
 }
 
-export const Logger = (type: ConsoleLogType, service: string, message: string) => {
+export const Logger = (type: ConsoleLogType, params: { service: string; message: string }) => {
   return config[type].action(
     '%s %c%s %c%s %c%s',
     new Date().toLocaleTimeString(),
     `color: ${config[type]?.color}; font-weight: bold`,
     `proApp RN [${type}]:`,
     'color: gray; font-weight: 300',
-    `[${service}]`,
+    `[${params.service}]`,
     'font-weight: normal',
-    message
+    params.message
   )
 }
