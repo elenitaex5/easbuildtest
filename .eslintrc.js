@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'react-native/react-native': true
   },
   extends: ['plugin:react/recommended', 'standard', 'prettier'],
   parser: '@typescript-eslint/parser',
@@ -12,7 +13,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'react-native'],
   rules: {
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
