@@ -42,7 +42,8 @@
           "icon": "./src/assets/notification-icon.png",
           "color": "#ffffff"
         }
-      ]
+      ],
+      "@config-plugins/detox"
     ]
   }
 }
