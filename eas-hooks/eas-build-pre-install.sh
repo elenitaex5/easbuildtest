@@ -36,4 +36,3 @@ if [[ "$EAS_BUILD_RUNNER" == "eas-build" && "$EAS_BUILD_PROFILE" == "test"* ]]; 
     brew install applesimutils
   fi
 fi
-

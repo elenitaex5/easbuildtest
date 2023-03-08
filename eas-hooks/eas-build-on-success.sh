@@ -2,11 +2,11 @@
 
 set -eox pipefail
 
-ANDROID_EMULATOR=pixel_4
+ANDROID_EMULATOR=Nexus_5X_API_33
 
 if [[ "$EAS_BUILD_PLATFORM" == "android" ]]; then
   # Start emulator
-  $ANDROID_SDK_ROOT/emulator/emulator @$ANDROID_EMULATOR -no-audio -no-boot-anim -no-window -use-system-libs 2>&1 >/dev/null &
+  /emulator/emulator @$ANDROID_EMULATOR -no-audio -no-boot-anim -no-window -use-system-libs 2>&1 >/dev/null &
 
   # Wait for emulator
   max_retry=10
@@ -18,19 +18,19 @@ if [[ "$EAS_BUILD_PLATFORM" == "android" ]]; then
   done
 
   if [[ "$EAS_BUILD_PROFILE" == "test" ]]; then
-    detox test --configuration android.release --headless
+    detox test --configuration android.emu.release --headless
   fi
   if [[ "$EAS_BUILD_PROFILE" == "test_debug" ]]; then
-    detox test --configuration android.debug --headless
+    detox test --configuration android.emu.debug --headless
   fi
 
   # Kill emulator
   adb emu kill
 else
   if [[  "$EAS_BUILD_PROFILE" == "test" ]]; then
-    detox test --configuration ios.release --headless
+    detox test --configuration ios.sim.release --headless
   fi
   if [[ "$EAS_BUILD_PROFILE" == "test_debug" ]]; then
-    detox test --configuration ios.debug --headless
+    detox test --configuration ios.sim.debug --headless
   fi
 fi
