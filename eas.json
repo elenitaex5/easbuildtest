@@ -32,6 +32,12 @@
         "simulator": true
       }
     },
+    "test-no-sim": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease :app:assembleAndroidTest -DtestBuildType=release",
+        "withoutCredentials": true
+      }
+    },
     "production": {}
   }
 }

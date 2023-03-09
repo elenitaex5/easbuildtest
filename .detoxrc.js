@@ -12,8 +12,9 @@ module.exports = {
   apps: {
     'ios.debug': {
       type: 'ios.app',
-      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/YOUR_APP.app',
-      build: 'xcodebuild -workspace ios/YOUR_APP.xcworkspace -scheme YOUR_APP -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
+      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/easbuildtest.app',
+      build:
+        'xcodebuild -workspace ios/easbuildtest.xcworkspace -scheme easbuildtest -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
     },
     'ios.release': {
       type: 'ios.app',
@@ -24,6 +25,7 @@ module.exports = {
     'android.debug': {
       type: 'android.apk',
       binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
+      testBinaryPath: 'android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk',
       build: 'cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug',
       reversePorts: [8081]
     },
@@ -49,7 +51,13 @@ module.exports = {
     emulator: {
       type: 'android.emulator',
       device: {
-        avdName: 'Pixel_3a_API_30_x86'
+        avdName: 'pixel_4'
+      }
+    },
+    emulator2: {
+      type: 'android.emulator',
+      device: {
+        avdName: 'Nexus_5X_API_33'
       }
     }
   },
@@ -72,6 +80,10 @@ module.exports = {
     },
     'android.emu.debug': {
       device: 'emulator',
+      app: 'android.debug'
+    },
+    'android.emu2.debug': {
+      device: 'emulator2',
       app: 'android.debug'
     },
     'android.emu.release': {
