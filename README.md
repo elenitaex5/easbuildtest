@@ -18,6 +18,8 @@ Deep links has an schema like : `easbuildtest://{url}`
 
 If you need to test Deep Links fastest way is using [QR GENERATOR TOOL](https://www.qr-code-generator.com/).
 
+To make them work in Expo, Expo dev client has to be running. Otherwise, the app will be opened, but no loaded, and a modal inlcuding deep-link will be shown.
+
 ## Troubleshoot
 
 ### Testing in web:
