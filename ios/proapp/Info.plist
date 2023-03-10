@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>easbuildtest</string>
+    <string>proapp</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -25,14 +25,14 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>easbuildtest</string>
-          <string>com.elenitaex5.easbuildtest</string>
+          <string>proapp</string>
+          <string>com.elenitaex5.proapp</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+easbuildtest</string>
+          <string>exp+proapp</string>
         </array>
       </dict>
     </array>

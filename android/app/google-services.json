@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "715424206845",
-    "project_id": "easbuildtest",
-    "storage_bucket": "easbuildtest.appspot.com"
+    "project_id": "proapp",
+    "storage_bucket": "proapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:715424206845:android:a052ecafd203d30bd81394",
         "android_client_info": {
-          "package_name": "com.elenitaex5.easbuildtest"
+          "package_name": "com.elenitaex5.proapp"
         }
       },
       "oauth_client": [

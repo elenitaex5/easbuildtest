@@ -1,6 +1,6 @@
-# Eas Build Test
+# PRO APP RN
 
-This project is for testing builds in Android and IOS, having a project from 0.
+Creating Abi Pro App for physician in React Native.
 
 For push notification the project has to be configured in FIREBASE console.
 https://docs.expo.dev/push-notifications/push-notifications-setup/
@@ -14,7 +14,7 @@ After installing apk or ipa in devices and start expo server dev client... an Ex
 
 ## Deep Links
 
-Deep links has an schema like : `easbuildtest://{url}`
+Deep links has an schema like : `proapp://{url}`
 
 If you need to test Deep Links fastest way is using [QR GENERATOR TOOL](https://www.qr-code-generator.com/).
 

@@ -1,4 +1,4 @@
-package com.elenitaex5.easbuildtest;
+package com.elenitaex5.proapp;
 
 import android.os.Build;
 import android.os.Bundle;

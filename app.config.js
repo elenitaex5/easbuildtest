@@ -1,11 +1,11 @@
 export default {
-  scheme: 'easbuildtest',
+  scheme: 'proapp',
   android: {
-    package: 'com.elenitaex5.easbuildtest',
+    package: 'com.elenitaex5.proapp',
     googleServicesFile: process.env.GOOGLE_SERVICES_JSON
   },
   ios: {
-    bundleIdentifier: 'com.elenitaex5.easbuildtest'
+    bundleIdentifier: 'com.elenitaex5.proapp'
   },
   extra: {
     eas: {

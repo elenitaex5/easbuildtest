@@ -10,7 +10,7 @@ import * as Linking from 'expo-linking'
 import { RootStackParamList } from '../../types'
 
 const linking: LinkingOptions<RootStackParamList> = {
-  prefixes: ['easbuildtest://', Linking.createURL('/')],
+  prefixes: ['proapp://', Linking.createURL('/')],
   config: {
     screens: {
       Root: {

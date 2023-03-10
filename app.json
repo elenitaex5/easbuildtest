@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "easbuildtest",
-    "slug": "easbuildtest",
+    "name": "Abi ProApp",
+    "slug": "proapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
-    "scheme": "easbuildtest",
+    "scheme": "proapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./src/assets/images/splash.png",
@@ -18,14 +18,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.elenitaex5.easbuildtest"
+      "bundleIdentifier": "com.elenitaex5.proapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.elenitaex5.easbuildtest"
+      "package": "com.elenitaex5.proapp"
     },
     "web": {
       "favicon": "./src/assets/images/favicon.png"

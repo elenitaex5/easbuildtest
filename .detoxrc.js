@@ -12,15 +12,14 @@ module.exports = {
   apps: {
     'ios.debug': {
       type: 'ios.app',
-      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/easbuildtest.app',
-      build:
-        'xcodebuild -workspace ios/easbuildtest.xcworkspace -scheme easbuildtest -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
+      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/proapp.app',
+      build: 'xcodebuild -workspace ios/proapp.xcworkspace -scheme proapp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
     },
     'ios.release': {
       type: 'ios.app',
       build:
-        'xcodebuild -workspace ios/easbuildtest.xcworkspace -scheme easbuildtest -configuration Release -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
-      binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/easbuildtest.app'
+        'xcodebuild -workspace ios/proapp.xcworkspace -scheme proapp -configuration Release -sdk iphonesimulator -arch x86_64 -derivedDataPath ios/build',
+      binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/proapp.app'
     },
     'android.debug': {
       type: 'android.apk',
