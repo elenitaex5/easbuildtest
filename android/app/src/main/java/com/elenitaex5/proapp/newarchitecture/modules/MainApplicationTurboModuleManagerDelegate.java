@@ -1,4 +1,4 @@
-package com.elenitaex5.proapp.newarchitecture.modules;
+package com.abiglobalhealth.proapp.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

@@ -26,7 +26,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>proapp</string>
-          <string>com.elenitaex5.proapp</string>
+          <string>com.abiglobalhealth.proapp</string>
         </array>
       </dict>
       <dict>

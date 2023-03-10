@@ -18,14 +18,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.elenitaex5.proapp"
+      "bundleIdentifier": "com.abiglobalhealth.proapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.elenitaex5.proapp"
+      "package": "com.abiglobalhealth.proapp"
     },
     "web": {
       "favicon": "./src/assets/images/favicon.png"

@@ -323,7 +323,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elenitaex5.proapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abiglobalhealth.proapp;
 				PRODUCT_NAME = "proapp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -349,7 +349,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elenitaex5.proapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abiglobalhealth.proapp;
 				PRODUCT_NAME = "proapp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1";

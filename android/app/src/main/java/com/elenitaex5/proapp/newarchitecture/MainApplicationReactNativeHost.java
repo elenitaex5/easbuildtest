@@ -1,4 +1,4 @@
-package com.elenitaex5.proapp.newarchitecture;
+package com.abiglobalhealth.proapp.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.elenitaex5.proapp.BuildConfig;
-import com.elenitaex5.proapp.newarchitecture.components.MainComponentsRegistry;
-import com.elenitaex5.proapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.abiglobalhealth.proapp.BuildConfig;
+import com.abiglobalhealth.proapp.newarchitecture.components.MainComponentsRegistry;
+import com.abiglobalhealth.proapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

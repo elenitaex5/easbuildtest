@@ -1,11 +1,11 @@
 export default {
   scheme: 'proapp',
   android: {
-    package: 'com.elenitaex5.proapp',
+    package: 'com.abiglobalhealth.proapp',
     googleServicesFile: process.env.GOOGLE_SERVICES_JSON
   },
   ios: {
-    bundleIdentifier: 'com.elenitaex5.proapp'
+    bundleIdentifier: 'com.abiglobalhealth.proapp'
   },
   extra: {
     eas: {
