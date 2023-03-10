@@ -12,7 +12,11 @@ After installing apk or ipa in devices and start expo server dev client... an Ex
 - iOS `ExponentPushToken[4ajkjJKY26ELR8pNkwa9jj]`
 - Android `ExponentPushToken[T1h2ypFUxXEVqBEeZzKfxv]`
 
-Deep links has an schema like : `easbuildtest://`
+## Deep Links
+
+Deep links has an schema like : `easbuildtest://{url}`
+
+If you need to test Deep Links fastest way is using [QR GENERATOR TOOL](https://www.qr-code-generator.com/).
 
 ## Troubleshoot
 
