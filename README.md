@@ -9,8 +9,8 @@ If the project is configured EAS project secret GOOGLE_SERVICES_JSON has to be i
 
 After installing apk or ipa in devices and start expo server dev client... an Expo Push Token is given like that: `ExponentPushToken[XXXXXXXXXXXXXX]`. It could be used for send push notifications to dev.
 
-- iOS `ExponentPushToken[4ajkjJKY26ELR8pNkwa9jj]`
-- Android `ExponentPushToken[T1h2ypFUxXEVqBEeZzKfxv]`
+- iOS `ExponentPushToken[RRM2F7G6wS7a4Z8kR863TV]`
+- Android `ExponentPushToken[XKY_TEBiSuvUuWGrVDn2-h]`
 
 ## Deep Links
 
