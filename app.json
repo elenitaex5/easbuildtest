@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "easbuildtest",
-    "slug": "easbuildtest",
+    "name": "Abi ProApp",
+    "slug": "proapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
-    "scheme": "easbuildtest",
+    "scheme": "proapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./src/assets/images/splash.png",
@@ -18,21 +18,21 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.elenitaex5.easbuildtest"
+      "bundleIdentifier": "com.abiglobalhealth.proapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.elenitaex5.easbuildtest"
+      "package": "com.abiglobalhealth.proapp"
     },
     "web": {
       "favicon": "./src/assets/images/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "afec2f33-fd70-463b-a0af-1ff17c1a8143"
+        "projectId": "3513020b-19cf-440d-bc31-4287acfc48d0"
       }
     },
     "plugins": [

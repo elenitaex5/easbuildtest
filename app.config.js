@@ -1,15 +1,15 @@
 export default {
-  scheme: 'easbuildtest',
+  scheme: 'proapp',
   android: {
-    package: 'com.elenitaex5.easbuildtest',
+    package: 'com.abiglobalhealth.proapp',
     googleServicesFile: process.env.GOOGLE_SERVICES_JSON
   },
   ios: {
-    bundleIdentifier: 'com.elenitaex5.easbuildtest'
+    bundleIdentifier: 'com.abiglobalhealth.proapp'
   },
   extra: {
     eas: {
-      projectId: 'afec2f33-fd70-463b-a0af-1ff17c1a8143'
+      projectId: '3513020b-19cf-440d-bc31-4287acfc48d0'
     }
   }
 }
